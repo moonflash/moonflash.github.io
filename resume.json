@@ -167,8 +167,8 @@
     {
       "name": "Music",
       "keywords": [
-        "<a href='https://kries.info' target='_blank'>Kries (band)</a>",
-        "<a href='https://www.facebook.com/EthnoambientSalona/' target='_blank'>Festival</a>"
+        "<a style='color: white;' href='https://kries.info' target='_blank'>Kries (band)</a>",
+        "<a style='color: white;' href='https://www.facebook.com/EthnoambientSalona/' target='_blank'>Festival</a>"
       ]
     }
   ]
