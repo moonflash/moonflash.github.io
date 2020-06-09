@@ -6,7 +6,7 @@
     "email": "mojmir.novakovic@gmail.com",
     "phone": "07453 990843",
     "website": "https://moonflash.github.io/",
-    "summary": "Ruby developer with more than 10 years of experience. Dedicated to well-tested code, continuous delivery and microservice architecture. Love building new things but, my lifetime experience thought me to respect any legacy code.",
+    "summary": "Ruby developer with more than 10 years of experience. Dedicated to well-tested code, continuous delivery and microservice architecture. Love building new things but, my lifetime experience taught me to respect any legacy code.",
     "location": {
       "address": "Pound Ln, The Stables",
       "postalCode": "SN8 4JA",
@@ -78,11 +78,11 @@
       ]
     },
     {
-      "company": "Festival Ethno Ambient Salona",
+      "company": "Festival Ethnoambient Salona",
       "position": "Founder and Festival director",
       "website": "https://www.facebook.com/EthnoambientSalona/",
       "startDate": "1998-08-01",
-      "endDate": "2015-09-01",
+      "endDate": "2016-09-01",
       "summary": "World Music Festival - Celebration of cultural diversity"
     }
   ],
