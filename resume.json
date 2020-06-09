@@ -5,7 +5,7 @@
     "picture": "https://pbs.twimg.com/profile_images/477333052692369408/4LAcfgKw_400x400.jpeg",
     "email": "mojmir.novakovic@gmail.com",
     "phone": "07453 990843",
-    "website": "https://kolo.it",
+    "website": "https://moonflash.github.io/resume/",
     "summary": "Ruby developer with more than 10 years of experience. Dedicated to well-tested code, continuous delivery and microservice architecture. Love building new things and my lifetime experience thought me to respect any legacy code.",
     "location": {
       "address": "Pound Ln, The Stables",
@@ -15,6 +15,11 @@
       "county": "Wilthshire"
     },
     "profiles": [
+      {
+        "network": "Resume",
+        "username": "pdf-file",
+        "url": "https://moonflash.github.io/resume/resume.pdf"
+      },
       {
         "network": "GitHub",
         "username": "moonflash",
