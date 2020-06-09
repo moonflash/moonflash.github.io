@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "Mojmir Novaković",
+    "label": "Ruby developer",
+    "picture": "https://pbs.twimg.com/profile_images/477333052692369408/4LAcfgKw_400x400.jpeg",
+    "email": "mojmir.novakovic@gmail.com",
+    "phone": "07453 990843",
+    "website": "https://kolo.it",
+    "summary": "Ruby developer with more than 10 years of experience. Dedicated to well-tested code, continuous delivery and microservice architecture. Love building new things and my lifetime experience thought me to respect any legacy code.",
+    "location": {
+      "address": "Pound Ln, The Stables",
+      "postalCode": "SN8 4JA",
+      "city": "Oare, Marlborough, Wiltshire",
+      "countryCode": "UK",
+      "county": "Wilthshire"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "moonflash",
+        "url": "https://github.com/moonflash"
+      },
+      {
+        "network": "Twitter",
+        "username": "moonflash",
+        "url": "https://twitter.com/moonflash"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mojmir novakovic",
+        "url": "https://www.linkedin.com/in/mojmirnovakovic/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "KoloIT",
+      "position": "Lead Developer",
+      "website": "https://kolo.it",
+      "startDate": "2014-04-01",
+      "endDate": "present",
+      "summary": "Kolo is the tool for presenting location on your website.",
+      "highlights": [
+        "Ruby, Javascript",
+        "MongoDB, ElasticSearch, Redis",
+        "Jenkins, Docker, Docker Swarm, Traefik"
+      ]
+    },
+    {
+      "company": "Homeflow",
+      "position": "Senior Ruby Developer",
+      "website": "https://homeflow.co.uk",
+      "startDate": "2011-12-01",
+      "endDate": "2019-12-01",
+      "summary": "Homeflow is a SaaS business, building estate agency webistes and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.",
+      "highlights": [
+        "mobile <a href='http://stags.mobile.homeflow.co.uk/showcase' target='_blank'>website</a> (BackboneJS)",
+        "internal/external redirection microservice",
+        "<a href='https://www.homeflow.co.uk/estate-agent-lead-generation/homeflow-boomerang/' target='_blank'>\"Boomerang\"</a> Lead email delivery service"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "",
+      "website": "",
+      "startDate": "2008-12-01",
+      "endDate": "2011-09-01",
+      "summary": "",
+      "highlights": [
+        "Ruby On Rails (2010-2011)",
+        "PHP (2008-2009)",
+        "ActionScript3 (2008-2010)"
+      ]
+    },
+    {
+      "company": "Festival Ethno Ambient Salona",
+      "position": "Founder and Festival director",
+      "website": "https://www.facebook.com/EthnoambientSalona/",
+      "startDate": "1998-08-01",
+      "endDate": "2015-09-01",
+      "summary": "World Music Festival - Celebration of cultural diversity"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Self-thought",
+      "area": "Web Development",
+      "startDate": "2008-06-01",
+      "endDate": "2020-01-01"
+    },
+    {
+      "institution": "Zagreb University",
+      "area": "Naval Architecture",
+      "startDate": "1989-06-01",
+      "endDate": "1992-01-01"
+    },
+    {
+      "institution": "MIOC - Split",
+      "area": "Mathematics",
+      "startDate": "1984-06-01",
+      "endDate": "1988-01-01"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "Ruby",
+        "Ruby On Rails",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "level": "Practical Knowledge",
+      "keywords": [
+        "SES",
+        "S3",
+        "SNS",
+        "Lambda",
+        "SageMaker"
+      ]
+    },
+    {
+      "name": "Continuous Delivery",
+      "level": "Deep Knowledge",
+      "keywords": [
+        "Jenkins",
+        "Docker",
+        "Docker Swarm",
+        "Traefik"
+      ]
+    },
+    {
+      "name": "Machine Learining",
+      "level": "Novice",
+      "keywords": [
+        "Tensorflow",
+        "Keras"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Ruby (10/10)"
+    },
+    {
+      "language": "Javascript (8/10)"
+    },
+    {
+      "language": "Python (5/10)"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "keywords": [
+        "Road Cycling"
+      ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "<a href='https:kries.info' target='_blank'>Kries (band)</a>",
+        "<a href='https://www.facebook.com/EthnoambientSalona/' target='_blank'>Festival</a>"
+      ]
+    }
+  ]
+}
