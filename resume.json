@@ -35,13 +35,13 @@
   "work": [
     {
       "company": "KoloIT",
-      "position": "Lead Developer",
+      "position": "CTO (only developer)",
       "website": "https://kolo.it",
       "startDate": "2014-04-01",
       "endDate": "present",
       "summary": "Kolo is a tool for presenting location on your website.",
       "highlights": [
-        "Ruby, Javascript",
+        "Ruby, Javascript, MarionetteJS",
         "MongoDB, ElasticSearch, Redis",
         "Jenkins, Docker, Docker Swarm, Traefik"
       ]
