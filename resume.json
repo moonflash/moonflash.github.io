@@ -55,10 +55,10 @@
       "summary": "Homeflow is a SaaS business, building estate agency webistes and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.",
       "highlights": [
         "mobile <a href='http://stags.mobile.homeflow.co.uk/showcase' target='_blank'>website</a> (BackboneJS)",
-        "internal/external redirection microservice (Redis)",
+        "internal/external redirection microservice",
         "maintaining various parts of the system that handled all UK properties, > 10.000 emails and > 1.000.000 daily visitors",
         "<a href='https://www.homeflow.co.uk/estate-agent-lead-generation/homeflow-boomerang/' target='_blank'>\"Boomerang\"</a> Lead email delivery service (Amazon SES/SNS, RabbitMQ, Postgres, MySQL)",
-        "Technology used: MySQL, Postgres, Redis, MongoDB, RabbitMQ, AWS, Docker, Jenkins..."
+        "Technology used: MySQL,MongoDB, Postgres, Redis, RabbitMQ, AWS, Docker, Jenkins..."
       ]
     },
     {
