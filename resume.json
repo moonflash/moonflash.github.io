@@ -6,7 +6,7 @@
     "email": "mojmir.novakovic@gmail.com",
     "phone": "07453 990843",
     "website": "https://moonflash.github.io/",
-    "summary": "Experienced Ruby developer, dedicated to well-tested code, continuous delivery and microservice architecture. Love building new things but, my lifetime experience taught me to respect any legacy code.",
+    "summary": "Experienced Ruby developer, dedicated to well-tested code, continuous delivery and microservice architecture. \nExtensive knowledge on medical cloud systems. Love building new things but, my lifetime experience taught me to respect any legacy code.",
     "location": {
       "address": "Greenland, Felon's Oak, Rodhuish",
       "postalCode": "TA24 6QS",
@@ -42,7 +42,7 @@
       "summary": "Public Cloud Radiology Platform, I was responsible for maintaining local hospital code/servers and the Cloud infrastructure.",
       "highlights": [
         "Ruby", "DevOps",
-        "Orthanc, DICOM, AWS-DirectConnect, AWS-ECS, AWS-SQS, AWS-Lambda, Rails, Roda",
+        "Orthanc, DICOM, MIRTH, AWS-DirectConnect, AWS-ECS, AWS-SQS, AWS-Lambda, Rails, Roda",
         "Docker, Docker Swarm, GitHub Actions"
       ]
     },
@@ -82,8 +82,7 @@
       "endDate": "2011-09-01",
       "summary": "",
       "highlights": [
-        "DevOps (2019-2022)",
-        "Ruby On Rails (2010-2022)",
+        "Ruby On Rails (2010-2011)",
         "PHP (2008-2009)",
         "ActionScript3 (2008-2010)"
       ]
