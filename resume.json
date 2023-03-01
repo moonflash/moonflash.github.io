@@ -16,8 +16,8 @@
     },
     "profiles": [
       {
-        "network": "Resume",
-        "username": "pdf-file",
+        "network": "link",
+        "username": "download",
         "url": "https://moonflash.github.io/resume.pdf"
       },
       {
@@ -35,7 +35,7 @@
   "work": [
     {
       "name": "myOrb",
-      "position": "Senior Ruby/DevOps developer",
+      "position": "Senior Ruby developer/DevOps ",
       "url": "https://www.myorb.info/",
       "startDate": "2020-08-01",
       "endDate": "2023-03-31",
@@ -67,10 +67,10 @@
       "endDate": "2019-12-01",
       "summary": "Homeflow is a SaaS business, building estate agency webistes and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.",
       "highlights": [
-        "mobile <a href='http://stags.mobile.homeflow.co.uk/showcase' target='_blank'>website</a> (BackboneJS)",
+        "mobile (BackboneJS)",
         "internal/external redirection microservice",
         "maintaining various parts of the system that handled all UK properties, > 10.000 emails and > 1.000.000 daily visitors",
-        "<a href='https://www.homeflow.co.uk/estate-agent-lead-generation/homeflow-boomerang/' target='_blank'>\"Boomerang\"</a> Lead email delivery service (Amazon SES/SNS, RabbitMQ, Postgres, MySQL)",
+        "Lead email delivery service (Amazon SES/SNS, RabbitMQ, Postgres, MySQL)",
         "Technology used: MySQL,MongoDB, Postgres, Redis, RabbitMQ, AWS, Docker, Jenkins..."
       ]
     },
@@ -128,20 +128,19 @@
     },
     {
       "name": "Amazon Web Services",
-      "level": "Practical Knowledge",
+      "level": "Advanced",
       "keywords": [
+        "SNS",
         "SES",
         "S3",
         "SQS",
-        "SNS",
         "Lambda",
-        "ECS",
-        "SageMaker"
+        "ECS"
       ]
     },
     {
       "name": "Continuous Delivery",
-      "level": "Deep Knowledge",
+      "level": "Advanced",
       "keywords": [
         "GitHub Actions",
         "Docker",
@@ -150,8 +149,17 @@
       ]
     },
     {
+      "name": "Medical field",
+      "level": "Advanced",
+      "keywords": [
+        "DICOM",
+        "MIRTH",
+        "Orthanc"
+      ]
+    },
+    {
       "name": "Machine Learining",
-      "level": "Novice",
+      "level": "Intermediate",
       "keywords": [
         "Tensorflow",
         "Keras"
@@ -179,8 +187,8 @@
     {
       "name": "Music",
       "keywords": [
-        "<a style='color: white;' href='https://kries.info' target='_blank'>Kries (band)</a>",
-        "<a style='color: white;' href='https://www.facebook.com/EthnoambientSalona/' target='_blank'>Festival</a>"
+        "Kries (band)",
+        "WorldMusic"
       ]
     }
   ]
