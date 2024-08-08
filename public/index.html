@@ -1,244 +1,199 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Mojmir Novaković</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?z1lat9');
-  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
-    url('fonts/icomoon.woff?z1lat9') format('woff'),
-    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    src: url(data:font/ttf;base64,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);
+    font-weight: normal;
+    font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-gitlab .path1:before {
-  content: "\e906";
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path2:before {
-  content: "\e907";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
-.icon-gitlab .path3:before {
-  content: "\e908";
-  margin-left: -1em;
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path4:before {
-  content: "\e909";
-  margin-left: -1em;
-  color: rgb(252, 163, 38);
-}
-.icon-gitlab .path5:before {
-  content: "\e90a";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
-.icon-gitlab .path6:before {
-  content: "\e90b";
-  margin-left: -1em;
-  color: rgb(252, 109, 38);
-}
-.icon-gitlab .path7:before {
-  content: "\e90c";
-  margin-left: -1em;
-  color: rgb(252, 163, 38);
-}
-.icon-gitlab .path8:before {
-  content: "\e90d";
-  margin-left: -1em;
-  color: rgb(226, 67, 41);
-}
 .icon-meetup .path1:before {
-  content: "\e901";
-  color: rgb(255, 255, 255);
+    content: "\e901";
+    color: rgb(255, 255, 255);
 }
 .icon-meetup .path2:before {
-  content: "\e902";
-  margin-left: -1.5em;
-  color: rgb(240, 1, 1);
+    content: "\e902";
+    margin-left: -1.5em;
+    color: rgb(240, 1, 1);
 }
 .icon-meetup .path3:before {
-  content: "\e903";
-  margin-left: -1.5em;
-  color: rgb(3, 3, 3);
+    content: "\e903";
+    margin-left: -1.5em;
+    color: rgb(3, 3, 3);
 }
 .icon-blogger:before {
-  content: "\e900";
+    content: "\e900";
 }
 .icon-exercism:before {
-  content: "\e601";
-}
-.icon-telegram:before {
-  content: "\e904";
+    content: "\e601";
 }
 .icon-flickr:before {
-  content: "\f16e";
+    content: "\f16e";
 }
 .icon-medium:before {
-  content: "\f23a";
+    content: "\f23a";
 }
 .icon-heart:before {
-  content: "\f004";
+    content: "\f004";
 }
 .icon-book:before {
-  content: "\f02d";
+    content: "\f02d";
 }
 .icon-linkedin:before {
-  content: "\f08c";
+    content: "\f08c";
 }
 .icon-twitter:before {
-  content: "\f099";
+    content: "\f099";
 }
 .icon-github:before {
-  content: "\f09b";
+    content: "\f09b";
 }
 .icon-link:before {
-  content: "\f0c1";
+    content: "\f0c1";
 }
 .icon-bars:before {
-  content: "\f0c9";
+    content: "\f0c9";
 }
 .icon-pinterest:before {
-  content: "\f0d2";
+    content: "\f0d2";
 }
 .icon-googleplus:before {
-  content: "\f0d5";
+    content: "\f0d5";
 }
 .icon-circle:before {
-  content: "\f111";
+    content: "\f111";
 }
 .icon-code:before {
-  content: "\f121";
+    content: "\f121";
 }
 .icon-youtube:before {
-  content: "\f167";
+    content: "\f167";
 }
 .icon-stackoverflow:before {
-  content: "\f16c";
-}
-.icon-bitbucket:before {
-  content: "\f171";
-}
-.icon-tumblr:before {
-  content: "\f173";
-}
-.icon-dribbble:before {
-  content: "\f17d";
-}
-.icon-skype:before {
-  content: "\f17e";
-}
-.icon-foursquare:before {
-  content: "\f180";
-}
-.icon-gittip:before {
-  content: "\f184";
-}
-.icon-gratipay:before {
-  content: "\f184";
-}
-.icon-stackexchange:before {
-  content: "\f18d";
-}
-.icon-vimeo:before {
-  content: "\f194";
-}
-.icon-graduation-cap:before {
-  content: "\f19d";
-}
-.icon-language:before {
-  content: "\f1ab";
-}
-.icon-child:before {
-  content: "\f1ae";
-}
-.icon-behance:before {
-  content: "\f1b5";
-}
-.icon-spotify:before {
-  content: "\f1bc";
-}
-.icon-soundcloud:before {
-  content: "\f1be";
-}
-.icon-codepen:before {
-  content: "\f1cb";
-}
-.icon-hackernews:before {
-  content: "\f1d4";
-}
-.icon-lastfm:before {
-  content: "\f202";
-}
-.icon-angellist:before {
-  content: "\f209";
-}
-.icon-facebook:before {
-  content: "\f230";
+    content: "\f16c";
 }
 .icon-instagram:before {
-  content: "\e905";
+    content: "\f16d";
 }
-.icon-trophy:before {
-  content: "\e605";
+.icon-bitbucket:before {
+    content: "\f171";
 }
-.icon-office:before {
-  content: "\e606";
+.icon-tumblr:before {
+    content: "\f173";
 }
-.icon-clock:before {
-  content: "\e60a";
+.icon-dribbble:before {
+    content: "\f17d";
 }
-.icon-reddit:before {
-  content: "\e609";
+.icon-skype:before {
+    content: "\f17e";
+}
+.icon-foursquare:before {
+    content: "\f180";
+}
+.icon-gittip:before {
+    content: "\f184";
+}
+.icon-gratipay:before {
+    content: "\f184";
+}
+.icon-stackexchange:before {
+    content: "\f18d";
+}
+.icon-vimeo:before {
+    content: "\f194";
+}
+.icon-graduation-cap:before {
+    content: "\f19d";
+}
+.icon-language:before {
+    content: "\f1ab";
+}
+.icon-child:before {
+    content: "\f1ae";
+}
+.icon-behance:before {
+    content: "\f1b5";
+}
+.icon-spotify:before {
+    content: "\f1bc";
+}
+.icon-soundcloud:before {
+    content: "\f1be";
+}
+.icon-codepen:before {
+    content: "\f1cb";
+}
+.icon-hackernews:before {
+    content: "\f1d4";
+}
+.icon-lastfm:before {
+    content: "\f202";
+}
+.icon-angellist:before {
+    content: "\f209";
+}
+.icon-facebook:before {
+    content: "\f230";
 }
 .icon-profile:before {
-  content: "\e600";
+    content: "\e600";
 }
 .icon-tools:before {
-  content: "\e034";
+    content: "\e034";
 }
 .icon-location:before {
-  content: "\e602";
+    content: "\e602";
 }
 .icon-mail:before {
-  content: "\e603";
+    content: "\e603";
 }
 .icon-phone:before {
-  content: "\e03f";
+    content: "\e03f";
 }
 .icon-newspaper:before {
-  content: "\e607";
+    content: "\e607";
 }
 .icon-chevron-down:before {
-  content: "\e60c";
+    content: "\e60c";
 }
 .icon-chevron-up:before {
-  content: "\e60d";
+    content: "\e60d";
 }
 .icon-dots-three-horizontal:before {
-  content: "\e60b";
+    content: "\e60b";
 }
 .icon-thumbs-up:before {
-  content: "\e604";
+    content: "\e604";
+}
+.icon-trophy:before {
+    content: "\e605";
+}
+.icon-office:before {
+    content: "\e606";
+}
+.icon-clock:before {
+    content: "\e60a";
+}
+.icon-reddit:before {
+    content: "\e609";
 }
 .icon-board:before {
-  content: "\e608";
+    content: "\e608";
 }
+
 
 .relative {
   position: relative;
@@ -279,15 +234,6 @@
 .label-keyword:last-child {
   margin-right: 0;
 }
-.label-keyword p {
-  margin: 0;
-}
-.label-keyword a {
-  color: white;
-}
-.label-keyword a:hover {
-  text-decoration: none;
-}
 .link-disguise {
   color: inherit;
 }
@@ -304,7 +250,7 @@
 }
 .fs-lg {
   font-size: 1.33333333em;
-  line-height: 0.75em;
+  line-height: .75em;
   vertical-align: -15%;
 }
 .fs-2x {
@@ -325,29 +271,16 @@
   padding: 0;
   outline: none !important;
 }
-/* the version when the icon file is last updated */
-@font-face {
-  font-family: 'jst-elegant';
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
-  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="icon-"],
-[class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'jst-elegant' !important;
-}
 body {
   font-family: 'Lato';
   background: #f0f0f0;
-  color: #333;
+  color: #333333;
 }
 .main {
   padding: 5px;
 }
 .card {
-  background: white;
+  background: #ffffff;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   min-height: 300px;
@@ -698,7 +631,7 @@ body {
   color: #005983;
 }
 .link-skype {
-  color: #12A5F4;
+  color: #12a5f4;
 }
 .link-skype:hover,
 .link-skype:focus {
@@ -706,12 +639,12 @@ body {
   color: #0986ca;
 }
 .link-instagram {
-  color: #e4405f;
+  color: #3f729b;
 }
 .link-instagram:hover,
 .link-instagram:focus {
   text-decoration: none;
-  color: #d31e40;
+  color: #305777;
 }
 .link-stackoverflow {
   color: #8e8e92;
@@ -770,7 +703,7 @@ body {
   color: #8c0717;
 }
 .link-gratipay {
-  color: #630;
+  color: #663300;
 }
 .link-gratipay:hover,
 .link-gratipay:focus {
@@ -850,7 +783,7 @@ body {
   color: #3b5687;
 }
 .link-angellist {
-  color: black;
+  color: #000000;
 }
 .link-angellist:hover,
 .link-angellist:focus {
@@ -882,7 +815,7 @@ body {
   color: #ab173e;
 }
 .link-blogger {
-  color: #FF9234;
+  color: #ff9234;
 }
 .link-blogger:hover,
 .link-blogger:focus {
@@ -890,7 +823,7 @@ body {
   color: #ff7701;
 }
 .link-medium {
-  color: #00AB6C;
+  color: #00ab6c;
 }
 .link-medium:hover,
 .link-medium:focus {
@@ -898,20 +831,12 @@ body {
   color: #00784c;
 }
 .link-flickr {
-  color: black;
+  color: #000000;
 }
 .link-flickr:hover,
 .link-flickr:focus {
   text-decoration: none;
   color: #000000;
-}
-.link-telegram {
-  color: #3BABDD;
-}
-.link-telegram:hover,
-.link-telegram:focus {
-  text-decoration: none;
-  color: #2291c3;
 }
 .card-skills {
   position: relative;
@@ -1000,7 +925,7 @@ body {
     page-break-before: always;
   }
 }
-</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Mojmir Novaković" src="https://s.gravatar.com/avatar/fa2eb04b70248637f5dbc4bde32c9c5c?s=100&amp;r=pg&amp;d=mm" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Mojmir Novaković</b></h3><h5 class="text-muted" itemprop="jobTitle">Ruby developer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Greenland, Felon's Oak, Rodhuish, Rodhuish, Somerset, UK, TA24 6QS</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">07453 990843</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:mojmir.novakovic@gmail.com" itemprop="email">mojmir.novakovic@gmail.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="https://moonflash.github.io/" target="_blank">https://moonflash.github.io/</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">Ruby (10/10), Javascript (8/10), Python (4/10)</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-link icon-link" href="https://moonflash.github.io/resume.pdf" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on link"></a><a class="fs-2x social-link link-github icon-github" href="https://github.com/moonflash" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on GitHub"></a><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/mojmirnovakovic/" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on LinkedIn"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>Experienced Ruby developer, dedicated to well-tested code, continuous delivery and microservice architecture.<br>
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a href="#" class="js-floating-nav-trigger floating-nav-trigger"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img data-src="holder.js/100x100" alt="Mojmir Novaković" src="https://s.gravatar.com/avatar/fa2eb04b70248637f5dbc4bde32c9c5c?s=100&amp;r=pg&amp;d=mm" itemprop="image" class="media-object img-circle center-block"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Mojmir Novaković</b></h3><h5 itemprop="jobTitle" class="text-muted">Ruby developer</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Greenland, Felon's Oak, Rodhuish, Rodhuish, Somerset, UK, TA24 6QS</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span itemprop="telephone" class="info">07453 990843</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a href="mailto:mojmir.novakovic@gmail.com" itemprop="email" class="link-disguise">mojmir.novakovic@gmail.com</a></span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-link"></i></span><span class="info"><a href="https://moonflash.github.io/" target="_blank">https://moonflash.github.io/</a></span></div><div class="detail"><span title="Languages I speak" class="icon"><i class="icon fs-lg icon-language"></i></span><span class="info">Ruby (10/10), Javascript (8/10), Go (5/10), Python (4/10)</span></div></div><hr/><div class="social-links text-center"><div><a href="https://moonflash.github.io/resume.pdf" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on link" class="fs-2x social-link link-link icon-link"></a><a href="https://github.com/moonflash" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on GitHub" class="fs-2x social-link link-github icon-github"></a><a href="https://www.linkedin.com/in/mojmirnovakovic/" target="_blank" data-toggle="tooltip" title="Mojmir Novaković on LinkedIn" class="fs-2x social-link link-linkedin icon-linkedin"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div id="about" class="detail"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div itemprop="description" class="content mop-wrapper"><p>Experienced Ruby developer, dedicated to well-tested code, continuous delivery and microservice architecture.<br>
 Extensive knowledge on medical cloud systems. Love building new things but, my lifetime experience taught me to respect any legacy code.</p>
 <p>LEAD EXPERIENCE:</p>
 <ul>
@@ -1010,44 +935,30 @@ Extensive knowledge on medical cloud systems. Love building new things but, my l
 <li>creating the environment where optimal decisions are taken/accepted/clearly-understood</li>
 <li>regular one-on-one catch-ups for detection of the team needs/goals</li>
 </ul>
-</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Ruby developer/DevOps </strong>,&nbsp;<a href="https://www.myorb.info/" target="_blank">myOrb</a></p><p class="text-muted"><small><span class="space-right">Aug, 2020 - Mar, 2023</span><span><i class="icon-clock mr-5"></i>2 years 8 months</span></small></p><div class="mop-wrapper space-bottom"><p>Public Cloud Radiology Platform, I was responsible for maintaining local hospital code/servers and the Cloud infrastructure.</p>
+</div></div></div></div><div id="work-experience" class="detail"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Ruby developer/DevOps </strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">2020-08-01 - 2023-03-31</span><span><i class="icon-clock mr-5"></i>2020-08-01 - 2023-03-31</span></small></p><div class="mop-wrapper space-bottom"><p>Public Cloud Radiology Platform, I was responsible for maintaining local hospital code/servers and the Cloud infrastructure.</p>
 </div><ul><li class="mop-wrapper"><p>Ruby</p>
 </li><li class="mop-wrapper"><p>DevOps</p>
 </li><li class="mop-wrapper"><p>Orthanc, DICOM, MIRTH, AWS-DirectConnect, AWS-ECS, AWS-SQS, AWS-Lambda, Rails, Roda</p>
 </li><li class="mop-wrapper"><p>Docker, Docker Swarm, GitHub Actions</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>CTO (only developer)</strong>,&nbsp;<a href="https://kolo.it" target="_blank">KoloIT</a></p><p class="text-muted"><small><span class="space-right">Apr, 2014 - Sep, 2022</span><span><i class="icon-clock mr-5"></i>8 years 5 months</span></small></p><div class="mop-wrapper space-bottom"><p>Kolo is a tool for presenting location on your website.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>CTO (only developer)</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">2014-04-01 - 2024-08-01</span><span><i class="icon-clock mr-5"></i>2014-04-01 - 2024-08-01</span></small></p><div class="mop-wrapper space-bottom"><p>Kolo is a tool for presenting location on your website.</p>
 </div><ul><li class="mop-wrapper"><p>Ruby, Javascript, MarionetteJS</p>
 </li><li class="mop-wrapper"><p>MongoDB, ElasticSearch, Redis</p>
 </li><li class="mop-wrapper"><p>Jenkins, Docker, Docker Swarm, Traefik</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Ruby Developer</strong>,&nbsp;<a href="https://homeflow.co.uk" target="_blank">Homeflow</a></p><p class="text-muted"><small><span class="space-right">Dec, 2011 - Dec, 2019</span><span><i class="icon-clock mr-5"></i>8 years</span></small></p><div class="mop-wrapper space-bottom"><p>Homeflow is a SaaS business, building estate agency webistes and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.</p>
+</li><li class="mop-wrapper"><p>GO</p>
+</li><li class="mop-wrapper"><p>LLM, Vector search, Opensource LLM</p>
+</li><li class="mop-wrapper"><p>Reading any website content and extracting location data, event dates/locations, summarizing the content, and presenting it on the map.</p>
+</li><li class="mop-wrapper"><p>Semantic search platform using Elasticsearch's vector search capabilities, enabling the system to understand and rank search results based on contextual relevance.</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Senior Ruby Developer</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">2011-12-01 - 2019-12-01</span><span><i class="icon-clock mr-5"></i>2011-12-01 - 2019-12-01</span></small></p><div class="mop-wrapper space-bottom"><p>Homeflow is a SaaS business, building estate agency websites and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.</p>
 </div><ul><li class="mop-wrapper"><p>mobile (BackboneJS)</p>
 </li><li class="mop-wrapper"><p>internal/external redirection microservice</p>
 </li><li class="mop-wrapper"><p>maintaining various parts of the system that handled all UK properties, &gt; 10.000 emails and &gt; 1.000.000 daily visitors</p>
 </li><li class="mop-wrapper"><p>Lead email delivery service (Amazon SES/SNS, RabbitMQ, Postgres, MySQL)</p>
 </li><li class="mop-wrapper"><p>Technology used: MySQL,MongoDB, Postgres, Redis, RabbitMQ, AWS, Docker, Jenkins...</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong></strong>,&nbsp;Freelance</p><p class="text-muted"><small><span class="space-right">Dec, 2008 - Sep, 2011</span><span><i class="icon-clock mr-5"></i>2 years 9 months</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Ruby On Rails (2010-2011)</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong></strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">2008-12-01 - 2011-09-01</span><span><i class="icon-clock mr-5"></i>2008-12-01 - 2011-09-01</span></small></p><div class="mop-wrapper space-bottom"></div><ul><li class="mop-wrapper"><p>Ruby On Rails (2010-2011)</p>
 </li><li class="mop-wrapper"><p>PHP (2008-2009)</p>
 </li><li class="mop-wrapper"><p>ActionScript3 (2008-2010)</p>
-</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Founder and Festival director</strong>,&nbsp;<a href="https://www.facebook.com/EthnoambientSalona/" target="_blank">Festival Ethnoambient Salona</a></p><p class="text-muted"><small><span class="space-right">Aug, 1998 - Sep, 2016</span><span><i class="icon-clock mr-5"></i>18 years 1 month</span></small></p><div class="mop-wrapper space-bottom"><p>World Music Festival - Celebration of cultural diversity</p>
-</div></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Master" data-placement="left"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Web Development</strong><div class="space-top labels"><span class="label label-keyword"><p>Ruby</p>
-</span><span class="label label-keyword"><p>Ruby On Rails</p>
-</span><span class="label label-keyword"><p>Javascript</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Amazon Web Services</strong><div class="space-top labels"><span class="label label-keyword"><p>SNS</p>
-</span><span class="label label-keyword"><p>SES</p>
-</span><span class="label label-keyword"><p>S3</p>
-</span><span class="label label-keyword"><p>SQS</p>
-</span><span class="label label-keyword"><p>Lambda</p>
-</span><span class="label label-keyword"><p>ECS</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Continuous Delivery</strong><div class="space-top labels"><span class="label label-keyword"><p>GitHub Actions</p>
-</span><span class="label label-keyword"><p>Docker</p>
-</span><span class="label label-keyword"><p>Docker Swarm</p>
-</span><span class="label label-keyword"><p>Traefik</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Advanced" data-placement="left"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Medical field</strong><div class="space-top labels"><span class="label label-keyword"><p>DICOM</p>
-</span><span class="label label-keyword"><p>MIRTH</p>
-</span><span class="label label-keyword"><p>Orthanc</p>
-</span></div></div></li><li class="card card-nested card-skills"><div class="skill-level" data-toggle="tooltip" title="Intermediate" data-placement="left"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong>Machine Learining</strong><div class="space-top labels"><span class="label label-keyword"><p>Tensorflow</p>
-</span><span class="label label-keyword"><p>Keras</p>
-</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Web Development, ,&nbsp;</strong>Self-taught</p><p class="text-muted clear-margin"><small>Jun, 2008 - Sep, 2022</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Naval Architecture, ,&nbsp;</strong>Zagreb University</p><p class="text-muted clear-margin"><small>Jun, 1989 - Jan, 1992</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Mathematics, ,&nbsp;</strong>MIOC - Split</p><p class="text-muted clear-margin"><small>Jun, 1984 - Jan, 1988</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Sports</strong></p><div class="space-top labels"><span class="label label-keyword">Road Cycling</span></div></li><li class="card card-nested"><p><strong>Music</strong></p><div class="space-top labels"><span class="label label-keyword">Kries (band)</span><span class="label label-keyword">WorldMusic</span></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Founder and Festival director</strong>,&nbsp;</p><p class="text-muted"><small><span class="space-right">1998-08-01 - 2016-09-01</span><span><i class="icon-clock mr-5"></i>1998-08-01 - 2016-09-01</span></small></p><div class="mop-wrapper space-bottom"><p>World Music Festival - Celebration of cultural diversity</p>
+</div></div></li></ul></div></div><div id="skills" class="detail"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div data-toggle="tooltip" title="Master" data-placement="left" class="skill-level"><div class="skill-progress master"></div></div><div class="skill-info"><strong>Web Development</strong><div class="space-top labels"><span class="label label-keyword">Ruby</span><span class="label label-keyword">Ruby On Rails</span><span class="label label-keyword">Javascript</span></div></div></li><li class="card card-nested card-skills"><div data-toggle="tooltip" title="Advanced" data-placement="left" class="skill-level"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Amazon Web Services</strong><div class="space-top labels"><span class="label label-keyword">SNS</span><span class="label label-keyword">SES</span><span class="label label-keyword">S3</span><span class="label label-keyword">SQS</span><span class="label label-keyword">Lambda</span><span class="label label-keyword">ECS</span></div></div></li><li class="card card-nested card-skills"><div data-toggle="tooltip" title="Advanced" data-placement="left" class="skill-level"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Continuous Delivery</strong><div class="space-top labels"><span class="label label-keyword">GitHub Actions</span><span class="label label-keyword">Docker</span><span class="label label-keyword">Docker Swarm</span><span class="label label-keyword">Traefik</span></div></div></li><li class="card card-nested card-skills"><div data-toggle="tooltip" title="Advanced" data-placement="left" class="skill-level"><div class="skill-progress advanced"></div></div><div class="skill-info"><strong>Medical field</strong><div class="space-top labels"><span class="label label-keyword">DICOM</span><span class="label label-keyword">MIRTH</span><span class="label label-keyword">Orthanc</span></div></div></li><li class="card card-nested card-skills"><div data-toggle="tooltip" title="Intermediate" data-placement="left" class="skill-level"><div class="skill-progress intermediate"></div></div><div class="skill-info"><strong>AI</strong><div class="space-top labels"><span class="label label-keyword">PyTorch</span><span class="label label-keyword">LLM</span><span class="label label-keyword">Hugging Face</span><span class="label label-keyword">Prompt Engineering</span><span class="label label-keyword">Tokenization</span></div></div></li></ul></div></div></div><div id="education" class="detail"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Web Development, ,&nbsp;</strong>Self-taught</p><p class="text-muted clear-margin"><small>Jun, 2008 - Sep, 2022</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Naval Architecture, ,&nbsp;</strong>Zagreb University</p><p class="text-muted clear-margin"><small>Jun, 1989 - Jan, 1992</small></p><i></i></div></li><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>Mathematics, ,&nbsp;</strong>MIOC - Split</p><p class="text-muted clear-margin"><small>Jun, 1984 - Jan, 1988</small></p><i></i></div></li></ul></div></div></div><div id="interests" class="detail"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>Sports</strong></p><div class="space-top labels"><span class="label label-keyword">Road Cycling</span></div></li><li class="card card-nested"><p><strong>Music</strong></p><div class="space-top labels"><span class="label label-keyword">Kries (band)</span><span class="label label-keyword">WorldMusic</span></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
   var toggleFloatingMenu = function() {
     $( '.js-floating-nav' ).toggleClass( 'is-visible' );
     $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
