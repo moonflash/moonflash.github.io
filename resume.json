@@ -51,12 +51,16 @@
       "position": "CTO (only developer)",
       "url": "https://kolo.it",
       "startDate": "2014-04-01",
-      "endDate": "2022-09-01",
+      "endDate": "2024-08-01",
       "summary": "Kolo is a tool for presenting location on your website.",
       "highlights": [
         "Ruby, Javascript, MarionetteJS",
         "MongoDB, ElasticSearch, Redis",
-        "Jenkins, Docker, Docker Swarm, Traefik"
+        "Jenkins, Docker, Docker Swarm, Traefik",
+        "GO",
+        "LLM, Vector search, Opensource LLM",
+        "Reading any website content and extracting location data, event dates/locations, summarizing the content, and presenting it on the map.",
+        "Semantic search platform using Elasticsearch's vector search capabilities, enabling the system to understand and rank search results based on contextual relevance."
       ]
     },
     {
@@ -65,7 +69,7 @@
       "url": "https://homeflow.co.uk",
       "startDate": "2011-12-01",
       "endDate": "2019-12-01",
-      "summary": "Homeflow is a SaaS business, building estate agency webistes and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.",
+      "summary": "Homeflow is a SaaS business, building estate agency websites and software. In 8 years I was responsible for maintaining legacy (Rails2.8) code, building/scaling/maintaining various applications and helping with strategic software development decisions.",
       "highlights": [
         "mobile (BackboneJS)",
         "internal/external redirection microservice",
@@ -158,11 +162,14 @@
       ]
     },
     {
-      "name": "Machine Learining",
+      "name": "AI",
       "level": "Intermediate",
       "keywords": [
-        "Tensorflow",
-        "Keras"
+        "PyTorch",
+        "LLM",
+        "Hugging Face",
+        "Prompt Engineering",
+        "Tokenization"
       ]
     }
   ],
@@ -172,6 +179,9 @@
     },
     {
       "language": "Javascript (8/10)"
+    },
+    {
+      "language": "Go (5/10)"
     },
     {
       "language": "Python (4/10)"
