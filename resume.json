@@ -54,7 +54,7 @@
       "endDate": "2024-08-01",
       "summary": "Kolo is a tool for presenting location on your website.",
       "highlights": [
-        "Ruby, Javascript, MarionetteJS",
+        "Ruby, Javascript, CoffeeScript, MarionetteJS",
         "MongoDB, ElasticSearch, Redis",
         "Jenkins, Docker, Docker Swarm, Traefik",
         "GO",
@@ -128,6 +128,7 @@
         "Ruby",
         "Ruby On Rails",
         "Javascript",
+        "CoffeeScript",
         "Go"
       ]
     },
