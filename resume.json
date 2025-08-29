@@ -34,6 +34,19 @@
   },
   "work": [
     {
+      "name": "Sortillus",
+      "position": "Developer/Cofounder",
+      "url": "https://sortillus.com/",
+      "startDate": "2024-05-01",
+      "endDate": "",
+      "summary": "Transforming E-commerce with AI-Powered Product Intelligence. Automatically categorizing products, detecting duplicates and providing detailed attributes using the latest open-source LLM technology ",
+      "highlights": [
+        "Ruby", "DevOps",
+        "Qdrant, Postgres, LLM, GO, Ruby, RabbitMQ, PHP, e-commerce",
+        "Docker, Docker Swarm, GitHub Actions"
+      ]
+    },
+    {
       "name": "myOrb",
       "position": "Senior Ruby developer/DevOps ",
       "url": "https://www.myorb.info/",
@@ -51,7 +64,7 @@
       "position": "CTO (only developer)",
       "url": "https://kolo.it",
       "startDate": "2014-04-01",
-      "endDate": "2024-08-01",
+      "endDate": "2020-08-01",
       "summary": "Kolo is a tool for presenting location on your website.",
       "highlights": [
         "Ruby, Javascript, CoffeeScript, MarionetteJS",
